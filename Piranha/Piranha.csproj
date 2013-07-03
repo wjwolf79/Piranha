@@ -545,6 +545,7 @@
     <Compile Include="Extend\Regions\MarkdownRegion.cs" />
     <Compile Include="Extend\RegionType.cs" />
     <Compile Include="IO\IMediaCacheProvider.cs" />
+    <Compile Include="IO\LocalMediaCacheProvider.cs" />
     <Compile Include="IO\LocalMediaProvider.cs" />
     <Compile Include="Extend\Extension.cs" />
     <Compile Include="Extend\ExtensionManager.cs" />

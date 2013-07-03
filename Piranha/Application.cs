@@ -35,6 +35,11 @@ namespace Piranha
 		public readonly IO.IMediaProvider MediaProvider;
 
 		/// <summary>
+		/// The currently active media cache provider.
+		/// </summary>
+		public readonly IO.IMediaCacheProvider MediaCacheProvider ;
+
+		/// <summary>
 		/// The currently active cache provider.
 		/// </summary>
         public readonly Cache.ICacheProvider CacheProvider;
@@ -106,6 +111,15 @@ namespace Piranha
 				if (type != null)
 					MediaProvider = (IO.IMediaProvider)Activator.CreateInstance(type) ;
 				else throw new TypeAccessException("MediaProvider " + Config.MediaProvider.TypeName + " was not found") ;
+			}
+
+			// Get the current media cache provider
+			assembly = Assembly.Load(Config.MediaCacheProvider.AssemblyName) ;
+			if (assembly != null) {
+				var type = assembly.GetType(Config.MediaCacheProvider.TypeName) ;
+				if (type != null)
+					MediaCacheProvider = (IO.IMediaCacheProvider)Activator.CreateInstance(type) ;
+				else throw new TypeAccessException("MediaCacheProvider " + Config.MediaCacheProvider.TypeName + " was not found") ;
 			}
 
 			// Get the current cache provider

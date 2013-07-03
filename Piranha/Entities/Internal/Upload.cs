@@ -99,10 +99,5 @@ namespace Piranha.Models
 			
 		}
 		#endregion
-
-		/// <summary>
-		/// Default constructor. Creates a new upload entity.
-		/// </summary>
-		public Upload() : base("~/App_Data/Uploads/", "~/App_Data/Cache/Uploads") {}
 	}
 }

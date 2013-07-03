@@ -56,10 +56,7 @@ namespace Piranha.Entities
 		/// Deletes all cached versions of the media file.
 		/// </summary>
 		public void DeleteCache() {
-			var dir = new DirectoryInfo(HttpContext.Current.Server.MapPath(VirtualCacheDir)) ;
-			if (dir != null)
-				foreach (FileInfo file in dir.GetFiles(Id.ToString() + "*")) 
-					file.Delete() ;
+			Application.Current.MediaCacheProvider.Delete(Id, IO.MediaType.Upload) ;
 		}
 	}
 }
