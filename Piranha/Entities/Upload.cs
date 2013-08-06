@@ -13,11 +13,6 @@ namespace Piranha.Entities
 	[Serializable]
 	public class Upload : StandardEntity<Upload>
 	{
-		#region Members
-		private const string VirtualDir = "~/App_Data/Uploads/" ;
-		private const string VirtualCacheDir = "~/App_Data/Cache/Uploads/" ;
-		#endregion
-
 		#region Properties
 		/// <summary>
 		/// Gets/sets the id of the entity this upload belongs to.

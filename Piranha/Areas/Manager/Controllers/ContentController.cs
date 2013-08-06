@@ -47,15 +47,6 @@ namespace Piranha.Areas.Manager.Controllers
 		}
 
 		/// <summary>
-		/// Gets the files list.
-		/// </summary>
-		/// <returns></returns>
-		[Access(Function="ADMIN_CONTENT")]
-		public ActionResult Uploads() {
-			return View("Uploads", UploadModel.Get()) ;
-		}
-
-		/// <summary>
 		/// Inserts a new media object.
 		/// </summary>
 		/// <param name="parentid">The optional parent folder id.</param>

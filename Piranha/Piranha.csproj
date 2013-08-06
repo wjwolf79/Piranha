@@ -198,11 +198,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Popup.cshtml</DependentUpon>
     </Compile>
-    <Compile Include="Areas\Manager\Views\Content\Uploads.generated.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Uploads.cshtml</DependentUpon>
-    </Compile>
     <Compile Include="Areas\Manager\Views\Dialog\Link.generated.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -564,7 +559,6 @@
     <Compile Include="Models\Manager\CategoryModels\EditModel.cs" />
     <Compile Include="Models\Manager\CategoryModels\ListModel.cs" />
     <Compile Include="Models\Manager\ContentModels\EditModel.cs" />
-    <Compile Include="Models\Manager\ContentModels\FileModel.cs" />
     <Compile Include="Models\Manager\ContentModels\ListModel.cs" />
     <Compile Include="Models\Manager\ContentModels\PopupModel.cs" />
     <Compile Include="Models\Manager\PageModels\EditModel.cs" />
@@ -1014,10 +1008,6 @@
     <Content Include="Areas\Manager\Views\Content\Popup.cshtml">
       <Generator>RazorGenerator</Generator>
       <LastGenOutput>Popup.generated.cs</LastGenOutput>
-    </Content>
-    <Content Include="Areas\Manager\Views\Content\Uploads.cshtml">
-      <Generator>RazorGenerator</Generator>
-      <LastGenOutput>Uploads.generated.cs</LastGenOutput>
     </Content>
     <Content Include="Areas\Manager\Views\Extensions\HtmlRegion.cshtml">
       <Generator>RazorGenerator</Generator>
