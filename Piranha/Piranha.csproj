@@ -452,8 +452,6 @@
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Comment.cs" />
     <Compile Include="Entities\Extension.cs" />
-    <Compile Include="Entities\FormData.cs" />
-    <Compile Include="Entities\FormItem.cs" />
     <Compile Include="Entities\Group.cs" />
     <Compile Include="Entities\Internal\Category.cs" />
     <Compile Include="Entities\Internal\ComplexName.cs" />
@@ -700,7 +698,6 @@
     <Compile Include="Web\AuthController.cs" />
     <Compile Include="Web\ClientCache.cs" />
     <Compile Include="Web\CultureHelper.cs" />
-    <Compile Include="Web\FormController.cs" />
     <Compile Include="Web\FrameworkType.cs" />
     <Compile Include="Web\Handlers\RequestHandlerCollection.cs" />
     <Compile Include="Web\IClientFramework.cs" />
@@ -1272,6 +1269,7 @@
       <LastGenOutput>MarkdownRegion.generated.cs</LastGenOutput>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

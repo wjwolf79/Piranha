@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Piranha.Entities
 {
@@ -55,6 +53,23 @@ namespace Piranha.Entities
 		/// </summary>
 		public Category() {
 			Extensions = new List<Extension>() ;
+		}
+
+		/// <summary>
+		/// Creates a new linked category.
+		/// </summary>
+		/// <returns>The category</returns>
+		public static Category Create() {
+			var c = new Category() { 
+				Id = Guid.NewGuid() 
+			} ;
+			c.Permalink = new Permalink() { 
+				Id = Guid.NewGuid(),
+				Type = "CATEGORY"
+			} ;
+			c.PermalinkId = c.Permalink.Id ;
+
+			return c ;
 		}
 	}
 }

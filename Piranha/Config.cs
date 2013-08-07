@@ -234,6 +234,11 @@ namespace Piranha
 		public static readonly Guid MediaNamespaceId = new Guid("368249B1-7F9C-4974-B9E3-A55D068DD9B6") ;
 
 		/// <summary>
+		/// Gets the id of the category namespace.
+		/// </summary>
+		public static readonly Guid CategoryNamespaceId = new Guid("AE46C4C4-20F7-4582-888D-DFC148FE9067") ;
+
+		/// <summary>
 		/// Gets the id of the default site tree.
 		/// </summary>
 		public static readonly Guid DefaultSiteTreeId = new Guid("c2f87b2b-f585-4696-8a2b-3c9df882701e");

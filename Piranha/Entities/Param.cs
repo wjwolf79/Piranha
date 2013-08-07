@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Piranha.Entities
 {
@@ -32,5 +29,15 @@ namespace Piranha.Entities
 		/// </summary>
 		public bool IsLocked { get ; set ; }
 		#endregion
+
+		/// <summary>
+		/// Creates a new param.
+		/// </summary>
+		/// <returns>The param</returns>
+		public static Param Create() {
+			return new Param() {
+				Id = Guid.NewGuid()
+			} ;
+		}
 	}
 }

@@ -159,7 +159,7 @@ namespace Piranha.Models.Manager.CategoryModels
 				Permalink  = new Permalink() {
 					Id = Guid.NewGuid(),
 					Type = Models.Permalink.PermalinkType.CATEGORY,
-					NamespaceId = new Guid("AE46C4C4-20F7-4582-888D-DFC148FE9067")
+					NamespaceId = Config.CategoryNamespaceId
 				} ;
 				Category.PermalinkId = Permalink.Id ;
 			}
