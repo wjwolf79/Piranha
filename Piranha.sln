@@ -1,34 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TemplateSite", "TemplateSite\", "{4F94EA08-A2AB-4AC6-A581-460A2F79300F}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
-		ProjectReferences = "{73b6e71e-3255-40a1-93ef-5416dc71e940}|Piranha.dll;{3edc9f07-99bf-4ad5-8bb6-b8d1e077bb75}|Piranha.WebPages.dll;"
-		Debug.AspNetCompiler.VirtualPath = "/TemplateSite"
-		Debug.AspNetCompiler.PhysicalPath = "TemplateSite\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\TemplateSite\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/TemplateSite"
-		Release.AspNetCompiler.PhysicalPath = "TemplateSite\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\TemplateSite\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "1127"
-		VWDVirtualPath = "/"
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FA40878F-CA04-4707-B20A-684D26BAE621}"
-	ProjectSection(SolutionItems) = preProject
-		RazorGenerator.LICENSE.md = RazorGenerator.LICENSE.md
-		README.md = README.md
-	EndProjectSection
-EndProject
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B9B2FF56-3B77-4403-B692-FE12464EA461}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
@@ -36,15 +10,59 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B9B2FF
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piranha", "Piranha\Piranha.csproj", "{73B6E71E-3255-40A1-93EF-5416DC71E940}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piranha", "Core\Piranha\Piranha.csproj", "{73B6E71E-3255-40A1-93EF-5416DC71E940}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateSite.Mvc", "TemplateSite.Mvc\TemplateSite.Mvc.csproj", "{C8218575-5356-4584-8EE1-9FEB46BABADC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateSite.Mvc", "Templates\TemplateSite.Mvc\TemplateSite.Mvc.csproj", "{C8218575-5356-4584-8EE1-9FEB46BABADC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piranha.Mvc", "Piranha.Mvc\Piranha.Mvc.csproj", "{2068F6B1-FB81-43B2-9760-F5B68C32085A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piranha.Mvc", "Core\Piranha.Mvc\Piranha.Mvc.csproj", "{2068F6B1-FB81-43B2-9760-F5B68C32085A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piranha.WebPages", "Piranha.WebPages\Piranha.WebPages.csproj", "{3EDC9F07-99BF-4AD5-8BB6-B8D1E077BB75}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piranha.WebPages", "Core\Piranha.WebPages\Piranha.WebPages.csproj", "{3EDC9F07-99BF-4AD5-8BB6-B8D1E077BB75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piranha.Azure", "Piranha.Azure\Piranha.Azure.csproj", "{1723FD00-638C-4470-A6CB-DBB09A555E51}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piranha.Azure", "Modules\Piranha.Azure\Piranha.Azure.csproj", "{1723FD00-638C-4470-A6CB-DBB09A555E51}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{9D450DB0-B1BC-49E6-9B3E-7A915FA2EFE5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{A2EFCC5C-B2D4-4D26-929D-620D4BBF5C1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{4C6B1406-6B43-44D6-8120-250F0DA314FB}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TemplateSite", "http://localhost:8775", "{FF250F87-B87C-4955-92F0-BF2587EEA49B}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{73b6e71e-3255-40a1-93ef-5416dc71e940}|Piranha.dll;{3edc9f07-99bf-4ad5-8bb6-b8d1e077bb75}|Piranha.WebPages.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_8775"
+		Debug.AspNetCompiler.PhysicalPath = "Templates\TemplateSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_8775\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_8775"
+		Release.AspNetCompiler.PhysicalPath = "Templates\TemplateSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_8775\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "Templates\TemplateSite\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Legacy", "Legacy", "{C3C647AC-13A0-4ABC-A448-8B4E589B4B05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piranha.Legacy.Services", "Legacy\Piranha.Legacy.Services\Piranha.Legacy.Services.csproj", "{8405AD59-101A-479B-A12D-66F79D478602}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuspec", ".nuspec", "{17A60E15-2E37-4482-B51C-3B67447B3ACF}"
+	ProjectSection(SolutionItems) = preProject
+		NuSpec\PiranhaCMS.Azure.nuspec = NuSpec\PiranhaCMS.Azure.nuspec
+		NuSpec\PiranhaCMS.Core.nuspec = NuSpec\PiranhaCMS.Core.nuspec
+		NuSpec\PiranhaCMS.Legacy.Services.nuspec = NuSpec\PiranhaCMS.Legacy.Services.nuspec
+		NuSpec\PiranhaCMS.Mvc.nuspec = NuSpec\PiranhaCMS.Mvc.nuspec
+		NuSpec\PiranhaCMS.nuspec = NuSpec\PiranhaCMS.nuspec
+		NuSpec\PiranhaCMS.WebPages.nuspec = NuSpec\PiranhaCMS.WebPages.nuspec
+		NuSpec\PiranhaCMSMvc.nuspec = NuSpec\PiranhaCMSMvc.nuspec
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,10 +70,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4F94EA08-A2AB-4AC6-A581-460A2F79300F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F94EA08-A2AB-4AC6-A581-460A2F79300F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4F94EA08-A2AB-4AC6-A581-460A2F79300F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F94EA08-A2AB-4AC6-A581-460A2F79300F}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{73B6E71E-3255-40A1-93EF-5416DC71E940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{73B6E71E-3255-40A1-93EF-5416DC71E940}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73B6E71E-3255-40A1-93EF-5416DC71E940}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -76,11 +90,25 @@ Global
 		{1723FD00-638C-4470-A6CB-DBB09A555E51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1723FD00-638C-4470-A6CB-DBB09A555E51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1723FD00-638C-4470-A6CB-DBB09A555E51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF250F87-B87C-4955-92F0-BF2587EEA49B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF250F87-B87C-4955-92F0-BF2587EEA49B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF250F87-B87C-4955-92F0-BF2587EEA49B}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF250F87-B87C-4955-92F0-BF2587EEA49B}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{8405AD59-101A-479B-A12D-66F79D478602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8405AD59-101A-479B-A12D-66F79D478602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8405AD59-101A-479B-A12D-66F79D478602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8405AD59-101A-479B-A12D-66F79D478602}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{B9B2FF56-3B77-4403-B692-FE12464EA461} = {FA40878F-CA04-4707-B20A-684D26BAE621}
+		{73B6E71E-3255-40A1-93EF-5416DC71E940} = {A2EFCC5C-B2D4-4D26-929D-620D4BBF5C1B}
+		{C8218575-5356-4584-8EE1-9FEB46BABADC} = {4C6B1406-6B43-44D6-8120-250F0DA314FB}
+		{2068F6B1-FB81-43B2-9760-F5B68C32085A} = {A2EFCC5C-B2D4-4D26-929D-620D4BBF5C1B}
+		{3EDC9F07-99BF-4AD5-8BB6-B8D1E077BB75} = {A2EFCC5C-B2D4-4D26-929D-620D4BBF5C1B}
+		{1723FD00-638C-4470-A6CB-DBB09A555E51} = {9D450DB0-B1BC-49E6-9B3E-7A915FA2EFE5}
+		{FF250F87-B87C-4955-92F0-BF2587EEA49B} = {4C6B1406-6B43-44D6-8120-250F0DA314FB}
+		{8405AD59-101A-479B-A12D-66F79D478602} = {C3C647AC-13A0-4ABC-A448-8B4E589B4B05}
 	EndGlobalSection
 EndGlobal
